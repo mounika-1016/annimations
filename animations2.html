@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+CZ:wght@100..400&display=swap"
+    rel="stylesheet">
+    <style>
+        body{
+           
+            weight: 100vh;
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+            background-color: rgb(147, 248, 248);
+            background-size: cover;
+        }
+        .button{
+            display: absolute;
+            border: 1px solid;
+            height:150px;
+            width: 150px;
+            background-color: aquamarine;
+            border-radius:50%;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            background-size: cover;
+            z-index:10000;
+
+        }
+        p{
+           margin-top: 0px;
+           margin-left: 100px;
+           font-size: 70px;
+           font-family: "Playwrite CZ", cursive;
+           text-shadow: 3px 3px 10px violet;
+           
+           
+        }
+        .music-beat ul {
+             padding-left: 100px;;
+             position: relative;
+            
+        }
+        .music-beat ul li{
+            left: 100px;
+            bottom:100px;
+            list-style:none;
+            height: 80px;
+            width:5px;
+            transform-origin: bottom;
+            line-height: 0.7cm;
+            position:relative;
+            border-radius: 10px;
+            line-height:0.90cm;
+            display: inline-block;
+            margin:0px 7px;
+           
+            animation:beat 1.5s linear infinite;
+        }
+        @keyframes beat{
+          0%{
+            transform: scaleY(0);
+            
+          } 
+           50%{
+            transform: scaleY(1);
+          }  
+          100%{
+            transform:scaleY(0.2);
+          } 
+        }
+        .music-beat ul li:nth-child(1){
+            animation-delay:0.2s;
+            height:20px;
+            background-color: azure;
+            
+        }
+        .music-beat ul li:nth-child(2){
+            animation-delay:0.4s;
+            height:40px;
+          
+            background-color: azure;
+        }
+        .music-beat ul li:nth-child(3){
+            animation-delay:0.2s;
+            height:40px;
+             
+            background-color: rgb(160, 36, 185);
+        }
+        .music-beat ul li:nth-child(4){
+            animation-delay:0.3s;
+          
+            background-color: rgb(24, 210, 210);
+           
+        }
+        .music-beat ul li:nth-child(5){
+            animation-delay:0.4s;
+            height:40px;
+            
+            background-color: rgb(36, 20, 159);
+        }
+        .music-beat ul li:nth-child(6){
+            animation-delay:0.2s;
+            background-color: rgb(210, 30, 30);
+            background-color: rgb(210, 14, 24);
+        }
+        .music-beat ul li:nth-child(7){
+            animation-delay:0.5s;
+            height:70px;
+            background-color:brown;
+            background-color: rgb(28, 177, 132);
+        }
+        .music-beat ul li:nth-child(8){
+            animation-delay:0.4s;
+            height:90px;
+          
+            background-color: azure;
+            background-color: blue;
+        }
+        .music-beat ul li:nth-child(9){
+            animation-delay:0.6s;
+            height:70px;
+            background-color: azure;
+            background-color: chartreuse;
+        }
+        .music-beat ul li:nth-child(10){
+            animation-delay:0.3s;
+            height: 50px;
+           background-color: azure;
+           background-color: aqua;
+        }
+        
+        
+        audio {
+            position: relative;
+            bottom:100px;
+            left:50px;
+        }
+        .button:hover + audio {
+            display: block;
+        }
+    
+        img{
+            border-radius: 20%;
+            box-shadow: 11px 11px 11px crimson;
+            position: absolute;
+            left:190px;
+        }  
+    </style>
+</head>
+<body>
+    <div class="music-beat">
+        <p style="color:rgb(29, 192, 99)">fell the<br> music</p>
+       
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+          <img src="../images/parrot.jfif" height="200px">
+          <audio class="audio-player"controls loop >
+            <source src="../movies/ohm bhim bush.html/[iSongs.info] 04 - Anuvanuvuu.mp3" type="audio/mp3">
+        </audio><br>
+    </div>
+</body>
